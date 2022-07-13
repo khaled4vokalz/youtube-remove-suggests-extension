@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+
+  "name": "Youtube DnD",
+  "description": "remove next suggestions from a video to save time",
+  "version": "0.0.1",
+
+  "icons": {
+    "16": "save-time.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch*"],
+      "js": ["run.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
